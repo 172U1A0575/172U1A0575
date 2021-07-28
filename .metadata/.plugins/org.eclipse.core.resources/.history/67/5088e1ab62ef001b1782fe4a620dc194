@@ -1,0 +1,10 @@
+package eg1;
+
+public class Calculator {
+
+	public Calculator(String name) {
+		System.out.println("Hello Calculator(String) name is "+name);
+		
+	}
+
+}

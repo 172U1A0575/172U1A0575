@@ -1,0 +1,9 @@
+package eg1;
+
+public class Demo1 {
+
+	public Demo1() {
+		Calculator c=new Calculator("JAVA");
+	}
+
+}

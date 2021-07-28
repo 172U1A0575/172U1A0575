@@ -1,0 +1,9 @@
+package eg2;
+
+public class EmployeeMain {
+
+	public EmployeeMain() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
