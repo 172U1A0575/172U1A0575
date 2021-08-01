@@ -2,8 +2,10 @@ package eg1;
 
 import java.util.Scanner;
 
-public class Primenumbers {
+public class removeduplicates {
+
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		int n;
         Scanner s = new Scanner(System.in);
         System.out.print("Enter no. of elements you want in array:");
@@ -14,24 +16,20 @@ public class Primenumbers {
         {
             a[i] = s.nextInt();
         }
-        System.out.println("Prime Numbers:");
-        for(int i=0;i<n;i++)
+        int j=0;
+        for(int i=0;i<n-1;i++)
         {
-        	int j=2;
-        	int p=1;
-        	while(j<a[i])
-        	{
-        		if(a[i]%j==0)
-        		{
-        			p=0;
-        			break;
-        		}
-        		j++;
-        	}
-        	if(p==1)
-        	{
-        		System.out.println(a[i] + " ");
+        	if (a[i]!=a[i+1]) {
+        		a[j++]=a[i];
         	}
         }
+        a[j++]=a[n-1];
+        n=j;
+        System.out.println("After Removing Duplicates:");
+        for(int i=0;i<n;i++) {
+        	System.out.print(a[i]+ " ");
+        }
+
 	}
+
 }
